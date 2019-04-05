@@ -8,10 +8,34 @@
 This webpage returns the user inputted number with a range beginning at "0", replacing certain numbers within that range: numbers that contain a 1 with "Beep!";
 numbers that contain a 2 with "Boop!";
 numbers that contain a 3 with "I'm sorry, Dave. I'm afraid I can't do that."
-## Specs
-*Parse user inputted string into numbers
-*Return range starting from 0
-* 
+## Specifications
+*The program receives a string inputted from the user and returns the string.
+    Input: "4"
+    Output: "4"
+
+*The program converts the string into integers.
+   Input: "4"
+   Output: 4
+
+*The program returns a range of numbers from 0 to the users inputted number
+    Input: "4"
+    Output: "0, 1, 2, 3, 4"
+
+*When a "3" appears, the program replaces that character with the string "I'm sorry, Dave. I'm afraid I can't do that."
+    Input: "4"
+    Output: "0, 1, 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4".
+
+*When a "2" appears, the program replaces that character with the string "Boop."
+    Input: "4"
+    Output: "0, 1, "Boop.", 3, 4".
+
+*When a "1" appears, the program replaces that character with the string "Beep."
+    Input: "4"
+    Output: "0, "Beep.", 2, 3, 4".
+
+*When neither a "3", "2", or "1" appears, the program returns that string unchanged"
+    Input: "4"
+    Output: "0, 1, 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4".
 
 ## Setup/Installation Requirements
 
