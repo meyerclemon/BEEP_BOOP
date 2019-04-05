@@ -1,17 +1,16 @@
 //Back/Business Interface
+var theReplacements = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop.", "Beep."];
+var userInput = $("input#formBeep").val();
+var str = userInput.toString();
 
-function userNum(userInput) {
-  return userInput;
-};
 
 
 //Front/User Interface
 $(document).ready(function() {
   $("form#formBeep").submit(function(event) {
     event.preventDefault();
-    var userInput = parseInt($("input#userBeep").val());
-    var result = userNum(userInput);
 
-    $("#result").text(userInput);
+    $("#result").text();
+
   });
 });
