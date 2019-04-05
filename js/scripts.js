@@ -3,6 +3,7 @@
 var beepBoop = function(beepboop) {
   return false;
 };
+}
 
 //Front/User Interface
 $(document).ready(function() {

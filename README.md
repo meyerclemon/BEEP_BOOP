@@ -5,13 +5,13 @@
 ##### By **Maya Frame**
 
 ## Description
-This webpage replaces user inputted numbers that contain a 1 with "Beep!";
+This webpage returns the user inputted number with a range beginning at "0", replacing certain numbers within that range: numbers that contain a 1 with "Beep!";
 numbers that contain a 2 with "Boop!";
 numbers that contain a 3 with "I'm sorry, Dave. I'm afraid I can't do that."
 ## Specs
-*
-*
-*
+*Parse user inputted string into numbers
+*Return range starting from 0
+* 
 
 ## Setup/Installation Requirements
 
