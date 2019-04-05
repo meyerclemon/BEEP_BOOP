@@ -33,4 +33,4 @@ If there are any issues, please contact the creator on github at [Diplomapster](
 
 *MIT 2019*
 
-Copyright (c) 2019 **Maya Frame
+Copyright (c) 2019 **Maya Frame**
