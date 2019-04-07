@@ -17,7 +17,7 @@ numbers that contain a 3 with "I'm sorry, Dave. I'm afraid I can't do that."
    Input: "4"
    Output: 4
 
-*The program returns a range of numbers from 0 to the users inputted number
+*The program returns a range of numbers from 0 to the user's inputted number
     Input: "4"
     Output: "0, 1, 2, 3, 4"
 

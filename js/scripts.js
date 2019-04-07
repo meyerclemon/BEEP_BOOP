@@ -1,57 +1,56 @@
+//Back/Business Interface
+
+function doTheThing( specialNum ) {
+
+  let range = [];
+  let boopArray = [];
+
+  for(i = 0; i <= specialNum; i++)
+    range.push(i);
+
+    for(i = 0; i < range.length; i++) {
+      let arg = range[i];
+      let result = beepBoop(arg);
+      boopArray.push( result );
+    }
+
+  return boopArray; // "I did the thing"
+}
+
+// input: num is the thing we're searching throug
+// checkfor is the thing we're searching for
+// output is TRUE if checkfor is inside num
+function contains(num, checkFor) {
+return false;
+
+}
+
+  function beepBoop(beeper) {
+    var theReplacements = ["I'm sorry, Dave. I'm afraid I can't do that.","Boop.","Beep."];
+
+    if( contains(beeper, 3) ) {
+      return theReplacements[0];
+    }
+    if( contains(beeper, 2) ) {
+      return theReplacements[1];
+    }
+
+    let beepStr = beeper.toString();
+    return beepStr;
+  }
+
+//       else return unchanged
+//
+//       return replacementArray
+
 
 
 //Front/User Interface
 $(document).ready(function() {
   $("form#beepboop").submit(function(event) {
     event.preventDefault();
-  //   var mynum = parseInt($("input#beepboop").val());
-  //   $("#result").text(result);
-
-//Back/Business Interface
-
-var theReplacements = ["I'm sorry, Dave. I'm afraid I can't do that.","Boop.","Beep."];
-var dave = theReplacements[0];
-var boop = theReplacements[1];
-var beep = theReplacements[2];
-var numbers = ["1", "2", "3"];
-
-function myFunction() {
-  var str = ("input#beepboop");
-  var n = str.includes("3",0)
-
-  $("#resultList").text();
-}
+      let myNum = parseInt($("input#beepboop").val());
+      let myResult = doTheThing( myNum );
+    $("#resultList").text(  myResult );
+})
 });
-});
-// theReplacements.forEach(function(replacement){
-//   if(str.includes(number) {
-//
-//   })
-//   numbers.forEach(function(number){
-//     // $("#resultList").append("<li>"" + (replace(number,theReplacement)) + "</li>");
-//     $("#resultList").append("<li>"" + (replace(number,theReplacement)) + "</li>");
-//   })
-// })
-// })
-//
-// //
-
-//  var userInputStored = [];
-//  var ints = userInput.split("");
-//
-// console.log(ints);
-//
-// userInputStored.forEach(function(int) {
-//   if(int.includes(3)) {
-//   result = userInputStored.replace(3, dave);
-// }
-
-// //Loop thru form and get the information, store in a new array
-//  userInput.forEach(function(num) {
-//    userInputStored.push(#("#"+item+"Input").val().toUpperCase());
-//  });
-// //display the new Array
-// userInputStored.forEach(function(item) {
-//   $(#result).append("<li>"+item+"</li>");
-// })
-//
