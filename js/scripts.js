@@ -1,15 +1,15 @@
 //Back/Business Interface
 function doTheThing(myNum) {
 
-    let range = [];
-    let boopArray = [];
+    var range = [];
+    var boopArray = [];
 
     for (i = 0; i <= myNum; i++)
         range.push(i);
 
     for (i = 0; i < range.length; i++) {
-        let argh = range[i];
-        let result = beepBoop(argh);
+        var argh = range[i];
+        var result = beepBoop(argh);
         boopArray.push(result);
     }
 
@@ -20,9 +20,9 @@ function doTheThing(myNum) {
 // checkfor is the thing we're searching for
 // output is TRUE if checkfor is inside num
 function contains(num, checkFor) {
-  let numStr = num.toString();
-  let goFish = checkFor.toString();
-  let  = .indexOf();
+  var numStr = num.toString();
+  var goFish = checkFor.toString();
+ // var  = .indexOf();
 
     // return true;
 
@@ -41,7 +41,7 @@ function beepBoop(beeper) {
         return theReplacements[2];
     }
 
-    let beepStr = beeper.toString();
+    var beepStr = beeper.toString();
     return beepStr;
 }
 
@@ -51,8 +51,8 @@ function beepBoop(beeper) {
 $(document).ready(function() {
     $("form#beepboop").submit(function(event) {
         event.preventDefault();
-        let myNum = parseInt($("input#beepboop").val());
-        let myResult = doTheThing(myNum);
+        var myNum = parseInt($("input#beepboop").val());
+        var myResult = doTheThing(myNum);
         $("#resultList").text(myResult);
-    })
+    });
 });
