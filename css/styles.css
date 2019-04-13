@@ -1,7 +1,15 @@
 #beepboop {
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
   border-style: dashed;
   background-color: white;
+
+}
+
+#resultList {
+  background-color: lightpink;
+  text-align: center;
 }
 
 body {
