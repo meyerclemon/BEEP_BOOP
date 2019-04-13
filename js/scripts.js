@@ -22,7 +22,7 @@ function doTheThing(myNum) {
 function contains(num, checkFor) {
   var numStr = num.toString();
   var goFish = checkFor.toString();
- // var  = .indexOf();
+  var  = .indexOf();
 
     // return true;
 
@@ -54,5 +54,5 @@ $(document).ready(function() {
         var myNum = parseInt($("input#beepboop").val());
         var myResult = doTheThing(myNum);
         $("#resultList").text(myResult);
-    });
+    })
 });
